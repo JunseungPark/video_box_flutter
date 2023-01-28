@@ -19,7 +19,7 @@ class MainVideoList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-        padding: EdgeInsets.zero,
+        padding: EdgeInsets.only(top: 3.0.h),
         itemCount: videoContentList.length,
         itemBuilder: (BuildContext context, int index) {
           var i = index.toInt().toString();
@@ -30,7 +30,7 @@ class MainVideoList extends StatelessWidget {
             elevation: 4.0, //그림자 깊이
             child: Container(
               padding: EdgeInsets.symmetric(vertical: 2.0.h, horizontal: 10.0.w),
-              height: 368.0.h,
+              height: 355.0.h,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

@@ -42,7 +42,9 @@ class _MainInfoState extends State<MainInfo> {
       decoration: BoxDecoration(
         image: DecorationImage(
           fit: BoxFit.cover,
-          image: AssetImage("assets/image/main_info_background.png"), // 배경 이미지
+          image: AssetImage(
+              "assets/image/main_info_background4x.png",
+          ),
         ),
       ),
       alignment: Alignment.center,
@@ -57,13 +59,13 @@ class _MainInfoState extends State<MainInfo> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children:  [
                   Container(
-                    padding: EdgeInsets.only(top: 50.h, bottom: 12.h),
+                    padding: EdgeInsets.only(top: 40.h, bottom: 20.h),
                     width: 220.0.w,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
-                          width: 165.0.w,
+                          width: 180.0.w,
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -89,44 +91,52 @@ class _MainInfoState extends State<MainInfo> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
-                            ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.white,
-                              elevation: 5,
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10.0)),
-                              minimumSize: Size(95.0.w, 29.0.h), //////// HERE
-                            ),
-                              onPressed: () {
-                                // 이동
-                              },
-                              child: Text(
-                                  '조선사 모음',
-                                style: textStyle.copyWith(
-                                    fontSize: 11.0.sp,
-                                    fontWeight: FontWeight.w700,
-                                    color: Colors.black
+                            Container(
+                              height: 25.h,
+                              child: ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.white,
+                                elevation: 5,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10.0)
+                                ),
+                                minimumSize: Size(95.0.w, 25.0.h), //////// HERE
+                              ),
+                                onPressed: () {
+                                  // 이동
+                                },
+                                child: Text(
+                                    '조선사 모음',
+                                  style: textStyle.copyWith(
+                                      fontSize: 11.0.sp,
+                                      fontWeight: FontWeight.w700,
+                                      color: Colors.black
+                                  ),
                                 ),
                               ),
                             ),
                             SizedBox(
                               width: 10.0.w,
                             ),
-                            ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: Colors.white,
-                                elevation: 5,
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(10.0)),
-                                minimumSize: Size(95.0.w, 29.0.h), //////// HERE
-                              ),
-                              onPressed: () {},
-                              child: Text(
-                                '주짓수',
-                                style: textStyle.copyWith(
-                                    fontSize: 11.0.sp,
-                                    fontWeight: FontWeight.w700,
-                                    color: Colors.black
+                            Container(
+                              height: 25.0.h,
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor: Colors.white,
+                                  elevation: 5,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(10.0)
+                                  ),
+                                  minimumSize: Size(95.0.w, 25.0.h), //////// HERE
+                                ),
+                                onPressed: () {},
+                                child: Text(
+                                  '주짓수',
+                                  style: textStyle.copyWith(
+                                      fontSize: 11.0.sp,
+                                      fontWeight: FontWeight.w700,
+                                      color: Colors.black
+                                  ),
                                 ),
                               ),
                             ),

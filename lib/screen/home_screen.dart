@@ -12,7 +12,6 @@ class HomeScreen extends StatelessWidget {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
         statusBarColor: Colors.transparent
     ));
-    print(MediaQuery.of(context).size);
     return SafeArea (
       child: Scaffold(
           primary: true,

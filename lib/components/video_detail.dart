@@ -18,16 +18,17 @@ class VideoDetail extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Container(
-              width: 350.0.w,
-              height: 65.0.h,
-              child: Text(
-                videoDetail,
-                maxLines: 6,
-                overflow: TextOverflow.ellipsis,
-                style: TextStyle(
-                  fontSize: 10.0.sp,
-                  fontWeight: FontWeight.w300
+            Expanded(
+              child: Container(
+                width: 350.0.w,
+                child: Text(
+                  videoDetail,
+                  softWrap: true,
+                  maxLines: 4,
+                  style: TextStyle(
+                    fontSize: 10.0.sp,
+                    fontWeight: FontWeight.w300
+                  ),
                 ),
               ),
             ),
