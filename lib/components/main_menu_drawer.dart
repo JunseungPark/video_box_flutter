@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:video_box/const/colors.dart';
 import 'package:video_box/screen/knowledge_screen.dart';
+import 'package:video_box/screen/sub_branding_screen.dart';
+import 'package:video_box/screen/supporting_screen.dart';
 
 class MainMenuDrawer extends StatelessWidget {
   const MainMenuDrawer({Key? key}) : super(key: key);
@@ -96,7 +98,7 @@ class MainMenuDrawer extends StatelessWidget {
                       color: Colors.white,
                     ),
                     child: Icon(
-                      Icons.home,
+                      Icons.archive_outlined,
                       color: Colors.black,
                     ),
                   ),
@@ -140,7 +142,7 @@ class MainMenuDrawer extends StatelessWidget {
             ),
             child: GestureDetector(
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => KnowledgeScreen()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => SubBrandingScreen()));
               },
               child: Row(
                 children: [
@@ -194,7 +196,7 @@ class MainMenuDrawer extends StatelessWidget {
             ),
             child: GestureDetector(
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => KnowledgeScreen()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => SupportingScreen()));
               },
               child: Row(
                 children: [
@@ -211,60 +213,6 @@ class MainMenuDrawer extends StatelessWidget {
                   Expanded(
                     child: Text(
                         'Supproting',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            fontSize: 10.sp,
-                            color: Colors.white
-                        )
-                    ),
-                  )
-                ],
-              ),
-            ),
-          ),
-          Container(
-            width: 180.0.w,
-            height: 29.0.h,
-            margin: EdgeInsets.only(top:25.0.h, left: 8.0.w, right: 8.0.w),
-            padding: EdgeInsets.only(left: 5.0.w),
-            decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topRight,
-                  end: Alignment.bottomLeft,
-                  colors: [
-                    Color(0xFFA68CF7),
-                    Color(0xFF80A4E6),
-                  ],
-                ),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 3,
-                    blurRadius: 3,
-                    offset: Offset(0, 3),
-                  ),
-                ],
-                borderRadius: BorderRadius.all(Radius.circular(20))
-            ),
-            child: GestureDetector(
-              onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => KnowledgeScreen()));
-              },
-              child: Row(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Colors.white,
-                    ),
-                    child: Icon(
-                      Icons.home,
-                      color: Colors.black,
-                    ),
-                  ),
-                  Expanded(
-                    child: Text(
-                        'Copyright',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontSize: 10.sp,

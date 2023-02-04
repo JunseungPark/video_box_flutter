@@ -1,7 +1,7 @@
 import 'package:drift/drift.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
-import 'package:video_box/components/knowledge_list_item.dart';
+import 'package:video_box/components/Knowledge/knowledge_list_item.dart';
 import 'package:video_box/database/video_database.dart';
 import 'package:video_box/model/video_content.dart';
 import 'package:video_box/utils/toast_messege.dart';

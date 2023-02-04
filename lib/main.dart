@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:video_box/const/jiujitsuVideos.dart';
 import 'package:video_box/const/videos.dart';
 import 'package:video_box/database/video_database.dart';
 import 'package:video_box/screen/knowledge_screen.dart';
@@ -20,7 +21,7 @@ void main() async {
   final VideoContents = await database.getVideoContentList();
 
   if(VideoContents.isEmpty) {
-    for(List videoContent in initVideoContentList) {
+    for(List videoContent in initJiujitsuVideoContentList) {
       await database.createVideoContentList(
         VideoContentCompanion(
           videoTitle: Value(videoContent[0]),

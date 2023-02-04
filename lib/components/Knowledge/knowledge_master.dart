@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:video_box/components/knowledge_container.dart';
+import 'package:video_box/components/Knowledge/knowledge_container.dart';
 
 class KnowledgeMaster extends StatelessWidget {
   const KnowledgeMaster({Key? key}) : super(key: key);
