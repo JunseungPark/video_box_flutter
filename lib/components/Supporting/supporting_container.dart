@@ -42,12 +42,12 @@ class SupportingContainer extends StatelessWidget {
                     Text(
                       '페이팔로 후원이 가능합니다!',
                         style: TextStyle(
-                            fontSize: 13.0.sp,
+                            fontSize: 12.0.sp,
                             fontWeight: FontWeight.w500
                         )
                     ),
                     SizedBox(
-                      height: 10.0.h,
+                      height: 15.0.h,
                     ),
                     Text(
                       '버튼을 누르시면 YPS의 서포팅 페이지로 자동 이동됩니다.',
