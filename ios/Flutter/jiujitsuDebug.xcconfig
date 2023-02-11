@@ -1,0 +1,6 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/main_jiujitsu.dart
+ASSET_PREFIX=jiujitsu
+BUNDLE_NAME=지식창고
+BUNDLE_DISPLAY_NAME=지식창고
