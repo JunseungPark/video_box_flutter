@@ -45,6 +45,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  flutter_flavorizr: ^2.1.5
 
 
 dev_dependencies:
@@ -64,7 +65,6 @@ dev_dependencies:
   fluttertoast: ^8.1.1
   flutter_screenutil: ^5.6.0
   package_info_plus: ^3.0.3
-  flutter_flavorizr: ^2.1.5
 
 
 # For information on the generic Dart part of this file, see the
@@ -80,31 +80,31 @@ flavorizr:
   flavors:
     jiujitsu:
       app:
-        name: "지식창고"
+        name: "지식의 창고"
 
       android:
-        applicationId: "com.example.jiujitsu"
+        applicationId: "com.knowledge.jiujitsu"
 
       ios:
-        bundleId: "com.example.jiujitsu"
+        bundleId: "com.knowledge.jiujitsu"
 
     history:
       app:
-        name: "지식창고"
+        name: "지식의 창고"
 
       android:
-        applicationId: "com.example.history"
+        applicationId: "com.knowledge.history"
       ios:
-        bundleId: "com.example.history"
+        bundleId: "com.knowledge.history"
 
-    ect:
+    etc:
       app:
-        name: "지식창고"
+        name: "지식의 창고"
 
       android:
-        applicationId: "com.example.ect"
+        applicationId: "com.knowledge.etc"
       ios:
-        bundleId: "com.example.ect"
+        bundleId: "com.knowledge.etc"
 
 flutter:
 

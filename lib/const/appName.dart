@@ -1,2 +1,3 @@
-const KnowledgeBoxJiujitsu = '지식박스 주짓수';
-const KnowledgeBoxHistory = 'KnowledgeBox_History';
+const KnowledgeBoxJiujitsu = 'com.knowledge.jiujitsu';
+const KnowledgeBoxHistory = 'com.knowledge.history';
+const KnowledgeBoxEtc = 'com.knowledge.etc';

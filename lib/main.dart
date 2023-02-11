@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:video_box/const/appName.dart';
+import 'package:video_box/const/dictionaryVideos.dart';
 import 'package:video_box/const/jiujitsuVideos.dart';
 import 'package:video_box/const/videos.dart';
 import 'package:video_box/database/video_database.dart';
@@ -24,7 +25,7 @@ void main() async {
 
   if(VideoContents.isEmpty) {
     PackageInfo packageInfo = await PackageInfo.fromPlatform();
-    String appName = packageInfo!.appName;
+    String appName = packageInfo!.packageName;
 
     var list = [];
     switch (appName){
@@ -34,8 +35,8 @@ void main() async {
       case KnowledgeBoxHistory :
         list = initHistorytList;
         break;
-      case 'robot' :
-        print('I Love robot');
+      case KnowledgeBoxEtc :
+        list = initdictionaryList;
         break;
       default :
         print('nothing');

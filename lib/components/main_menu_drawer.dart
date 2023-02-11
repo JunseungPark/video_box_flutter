@@ -98,7 +98,7 @@ class MainMenuDrawer extends StatelessWidget {
                       color: Colors.white,
                     ),
                     child: Icon(
-                      Icons.archive_outlined,
+                      Icons.view_in_ar,
                       color: Colors.black,
                     ),
                   ),
@@ -152,7 +152,7 @@ class MainMenuDrawer extends StatelessWidget {
                       color: Colors.white,
                     ),
                     child: Icon(
-                      Icons.home,
+                      Icons.diversity_1,
                       color: Colors.black,
                     ),
                   ),
@@ -206,7 +206,7 @@ class MainMenuDrawer extends StatelessWidget {
                       color: Colors.white,
                     ),
                     child: Icon(
-                      Icons.home,
+                      Icons.monetization_on_outlined,
                       color: Colors.black,
                     ),
                   ),
