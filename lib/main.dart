@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:video_box/const/appName.dart';
 import 'package:video_box/const/jiujitsuVideos.dart';
 import 'package:video_box/const/videos.dart';
 import 'package:video_box/database/video_database.dart';
@@ -8,6 +9,7 @@ import 'package:drift/drift.dart';
 import 'package:get_it/get_it.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:video_box/screen/splash_screen.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,7 +23,25 @@ void main() async {
   final VideoContents = await database.getVideoContentList();
 
   if(VideoContents.isEmpty) {
-    for(List videoContent in initJiujitsuVideoContentList) {
+    PackageInfo packageInfo = await PackageInfo.fromPlatform();
+    String appName = packageInfo!.appName;
+
+    var list = [];
+    switch (appName){
+      case KnowledgeBoxJiujitsu :
+        list = initJiujitsuVideoContentList;
+        break;
+      case KnowledgeBoxHistory :
+        list = initHistorytList;
+        break;
+      case 'robot' :
+        print('I Love robot');
+        break;
+      default :
+        print('nothing');
+    }
+
+    for(List videoContent in list) {
       await database.createVideoContentList(
         VideoContentCompanion(
           videoTitle: Value(videoContent[0]),
