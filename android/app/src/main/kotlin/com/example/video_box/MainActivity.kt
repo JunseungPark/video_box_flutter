@@ -1,4 +1,4 @@
-package com.knowlege.video_box
+package com.knowledge.video_box
 
 import io.flutter.embedding.android.FlutterActivity
 
